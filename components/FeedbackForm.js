@@ -21,7 +21,13 @@ export default function FeedbackForm() {
         <input id="name" className={styles['form-field']} type="text" name="name" />
 
         <label htmlFor="email">Email</label>
-        <input id="email" className={styles['form-field']} type="email" name="email" required />
+        <input id="email" className={styles[ 'form-field' ]} type="email" name="email" required />
+      
+        <label htmlFor="checkbox">Checkbox</label>
+        <input id="checkbox" className={styles[ 'form-field' ]} type="checkbox" value="1" name="checkbox" required />
+      
+        <label htmlFor="checkbox-1">Checkbox 1</label>
+        <input id="checkbox-1" className={styles['form-field']} type="checkbox" value="Here is the choice" name="checkbox-1" required />
 
         <label htmlFor="feedback">What is your feedback?</label>
         <textarea id="feedback" className={styles['form-field']} wrap="soft" name="feedback" required></textarea>
